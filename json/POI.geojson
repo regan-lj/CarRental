@@ -1,0 +1,124 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "Museum",
+         "type": "Landmark"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.510785,
+           -45.865646
+         ]
+       }
+     },
+     {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "Signal Hill",
+         "type": "Landmark"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.546958,
+           -45.858282
+        ]
+      }
+     },
+     {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "Forsyth Barr Stadium",
+         "type": "Landmark"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.524361,
+           -45.869459
+        ]
+      }
+     },
+     {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "Filadelfio's Pizza",
+         "type": "Restaurant"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.519024,
+           -45.854785
+        ]
+      }
+     },
+     {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "Nova",
+         "type": "Restaurant"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.50292,
+           -45.874411
+        ]
+      }
+     },
+     {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "No 7 Belmac",
+         "type": "Restaurant"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.50027,
+           -45.85804
+        ]
+      }
+     },
+     {
+       "type": "Feature",
+       "properties": {
+         "marker-color": "#7e7e7e",
+         "marker-size": "medium",
+         "marker-symbol": "",
+         "name": "GeoCars",
+         "type": "Store"
+       },
+       "geometry": {
+         "type": "Point",
+         "coordinates": [
+           170.498811,
+           -45.880921
+        ]
+      }
+     }
+  ]
+}

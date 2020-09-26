@@ -1,0 +1,243 @@
+@font-face { font-family: prata-regular;
+    src: url('../fonts/Prata-Regular.ttf'); }
+
+@font-face { font-family: lato-light;
+    src: url('../fonts/Lato-Light.ttf'); }
+
+body{
+    font-family: lato-light;
+}
+
+/** HEADER AND NAVIGATION **/
+
+#header{
+    text-align: center;
+    font-family: prata-regular;
+}
+
+#header h1{
+    font-size: 40pt;
+    margin-bottom: 10pt;
+    margin-top: 50pt;
+    line-height:35px;
+}
+
+#header p{
+    font-size: 16pt;
+    padding-bottom: 10pt;
+}
+
+ul#page-links{
+    list-style-type: none;
+    margin: 20pt;
+    padding: 0;
+    /*position: fixed; !*might get rid of, keeps nav at top of page*!*/
+    /*z-index: 1;*/
+    /*transform: translate(20%, -80%);*/
+}
+
+ul#page-links li{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    max-width: 30%;
+}
+
+ul#page-links a{
+    background-color: #dddddd;
+    padding: 10px 110px;
+    text-decoration:none;
+    color: inherit;
+}
+
+ul#page-links a:hover{
+    background-color: #ffd6ba;
+}
+
+/* MAIN BODY */
+
+.car-info, .reviews{
+    position:relative;
+    margin-top: 50pt;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.car-info h2 {
+    padding: 0;
+    float: left;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+
+.car-info h3{
+    margin-top: 5pt;
+    float: right;
+    margin-right: auto;
+}
+
+.car-info p, .reviews p{
+    margin-top: 3pt;
+    margin-bottom: 0;
+}
+
+.reviews p{
+    margin-left: 8pt;
+}
+
+.bookButton {
+    border-radius: 50px;
+    border: none;
+    padding: 5pt;
+    cursor: pointer;
+    display: none;
+    font-size: 12pt;
+    width: 100%;
+}
+
+.bookButton:hover {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*:focus{
+    outline: 0;
+}
+
+.toToggle{
+    display: none;
+}
+
+/* Booking Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h1{
+    font-size: 20pt;
+    font-family: prata-regular;
+}
+
+.modal p,input{
+    display: inline-block;
+    position: relative;
+}
+
+.availableButton, .proceedButton {
+    border: none;
+    padding: 5pt;
+    cursor: pointer;
+}
+
+.availableButton:hover, .proceedButton:hover {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.availableButton{
+    border-radius: 50px;
+    user-select: none;
+}
+
+.proceedButton{
+    background-color: #89B0AE;
+    width: 70%;
+    display: none;
+}
+
+.nameInput{
+    display: none;
+}
+
+#validateDates, #validateName{
+    color: red;
+}
+
+/* Map */
+
+#map{
+    height: 450px;
+    width: 70%;
+    margin: auto;
+}
+
+.my-leaflet-map-container img {
+    max-height: none;
+}
+
+.Restaurant{
+    display: none;
+}
+
+.markerButtons{
+    text-align: center;
+}
+
+.markersButton{
+    width: auto;
+    border-radius: 10px;
+    border: none;
+    padding: 5pt 20pt;
+    cursor: pointer;
+    margin-bottom: 10pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    display: inline-block;
+    position: relative;
+}
+
+/**   Contact page   **/
+.contact{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
