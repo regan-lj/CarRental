@@ -281,3 +281,7 @@ img{
     transition: all 0.4s ease 0s;
 }
 
+.notify {
+    color: #89B0AE;
+}
+
