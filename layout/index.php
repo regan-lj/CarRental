@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <title>GeoCars | Rentals</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="../javascript/jquery-3.5.1.min.js"></script>
-    <script src="../javascript/displayCars.js"></script>
-    <script src="../javascript/makeBooking.js"></script>
-    <script src="../javascript/displayReviews.js"></script>
 </head>
-<header>
-    <div id="header">
-        <h1>GeoCars</h1>
-        <p>Same-day car rentals in Dunedin</p>
-        <div class="table">
-            <ul id="page-links">
-                <li> <a style="background-color: #ffd6ba">Rentals</a>
-                <li> <a href="custBooking.php">My Bookings</a>
-                <li> <a href="map.php">More Info</a>
-            </ul>
-        </div>
-    </div>
-</header>
+<?php
+$scriptList = array('../javascript/jquery-3.5.1.min.js',
+                    '../javascript/displayCars.js',
+                    '../javascript/makeBooking.js');
+include('../hidden/header.php');
+?>
 <body>
-
 <!-- Booking Modal -->
 <div id="modal-box" class="modal">
 
@@ -56,11 +44,5 @@
 <div class="car-info"></div>
 
 </body>
-<footer>
-    <br><br><br>
-    <hr style="width:80%">
-    <div id="footerReviews" class="reviews">
-        <h3>Reviews for GeoCar:</h3>
-    </div>
-</footer>
+<?php include("../hidden/footer.php"); ?>
 </html>
