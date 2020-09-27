@@ -31,9 +31,6 @@ ul#page-links{
     list-style-type: none;
     margin: 20pt;
     padding: 0;
-    /*position: fixed; !*might get rid of, keeps nav at top of page*!*/
-    /*z-index: 1;*/
-    /*transform: translate(20%, -80%);*/
 }
 
 ul#page-links li{
@@ -45,7 +42,7 @@ ul#page-links li{
 
 ul#page-links a{
     background-color: #dddddd;
-    padding: 10px 110px;
+    padding: 10px 50px;
     text-decoration:none;
     color: inherit;
 }
@@ -257,7 +254,27 @@ img{
     background-color: #E9967A;
 }
 
-.cancelButton:hover {
+.deleteButton {
+    border-radius: 10px;
+    border: none;
+    padding: 4pt;
+    cursor: pointer;
+    font-size: 12pt;
+    width: 20%;
+    background-color: #E9967A;
+}
+
+.editButton {
+    border-radius: 10px;
+    border: none;
+    padding: 4pt;
+    cursor: pointer;
+    font-size: 12pt;
+    width: 20%;
+    background-color: lightgray;
+}
+
+.cancelButton:hover, .deleteButton:hover, .editButton:hover {
     text-shadow: 0 0 6px rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);

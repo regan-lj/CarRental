@@ -14,34 +14,6 @@
                     "month": "10",
                     "year": "2020"
                 }
-            },
-            {
-                "number": "BJB 499",
-                "name": "Person 3",
-                "pickup": {
-                    "day": "13",
-                    "month": "10",
-                    "year": "2020"
-                },
-                "dropoff": {
-                    "day": "15",
-                    "month": "10",
-                    "year": "2020"
-                }
-            },
-            {
-                "number": "HDE 774",
-                "name": "Person 4",
-                "pickup": {
-                    "day": "08",
-                    "month": "12",
-                    "year": "2020"
-                },
-                "dropoff": {
-                    "day": "18",
-                    "month": "12",
-                    "year": "2020"
-                }
             }
         ]
     }
