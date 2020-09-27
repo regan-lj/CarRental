@@ -12,6 +12,10 @@ let MakeBooking = (function() {
 
         let modal = document.getElementById("modal-box");
         modal.style.display = "block";
+
+        // Set a hidden form input to be the registration number
+        let form = $("#bookingForm");
+        form.prepend("<input name='rego' type='hidden' value='" + rego + "'>")
     }
 
     /**
@@ -46,7 +50,6 @@ let MakeBooking = (function() {
         };
     }
 
-    // TODO: User can still type in previous dates
     /**
      * Set the minimum pick-up date to be today's date
      */
@@ -181,12 +184,10 @@ let MakeBooking = (function() {
         $pickup.change(setMinDropoff);
         $pickup.change(restrictAvailabilitySelection);
         $dropoff.change(restrictAvailabilitySelection);
-        // $pickup.change(validateDates);
-        // $dropoff.change(validateDates);
 
         $("#proceed").on("click", function() {
             if (validateName() === true) {
-                location.href = "custBooking.html";
+                location.href = "custBooking.php";
             }
         });
     };

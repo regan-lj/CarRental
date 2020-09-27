@@ -15,7 +15,6 @@ let SaveBooking = (function () {
 
         stored.push(booking);
         window.localStorage.setItem("booking", JSON.stringify(stored));
-        console.log(localStorage.getItem("booking"));
     }
 
     /**

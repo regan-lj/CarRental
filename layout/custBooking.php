@@ -15,9 +15,9 @@
         <p>Same-day car rentals in Dunedin</p>
         <nav class="table">
             <ul id="page-links">
-                <li> <a href="index.html">Rentals</a>
+                <li> <a href="index.php">Rentals</a>
                 <li> <a style="background-color: #ffd6ba">My Bookings</a>
-                <li> <a href="map.html">More Info</a>
+                <li> <a href="map.php">More Info</a>
             </ul>
         </nav>
     </div>
