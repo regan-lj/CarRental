@@ -241,7 +241,26 @@ img{
     margin: auto;
 }
 
+/** Admin **/
+
 .center{
     text-align: center;
+}
+
+.cancelButton {
+    border-radius: 50px;
+    border: none;
+    padding: 5pt;
+    cursor: pointer;
+    font-size: 12pt;
+    width: 100%;
+    background-color: #E9967A;
+}
+
+.cancelButton:hover {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
 }
 
