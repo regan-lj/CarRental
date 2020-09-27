@@ -33,7 +33,6 @@ let MakeBooking = (function() {
         span.onclick = function() {
             modal.style.display = "none";
             // Reset the dates and coloring
-            // TODO: Hide/ignore the warnings due to dd/mm/yyyy format
             $("#pick-up").val('dd/mm/yyyy');
             $("#drop-off").val('dd/mm/yyyy');
             $("#availability").css("color", "black");
@@ -184,12 +183,6 @@ let MakeBooking = (function() {
         $pickup.change(setMinDropoff);
         $pickup.change(restrictAvailabilitySelection);
         $dropoff.change(restrictAvailabilitySelection);
-
-        $("#proceed").on("click", function() {
-            if (validateName() === true) {
-                location.href = "custBooking.php";
-            }
-        });
     };
 
     return pub;

@@ -35,7 +35,7 @@ include('../hidden/header.php');
             <input type="text" id="name" name="nameInput" class="nameInput">
 
             <br class="nameInput"><br class="nameInput"><br class="nameInput">
-            <input type="submit" id="proceed" value="Proceed With Booking" class="proceedButton">
+            <input type="submit" id="proceed" name="proceed" value="Proceed With Booking" class="proceedButton">
         </form>
     </div>
 

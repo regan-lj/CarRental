@@ -24,11 +24,6 @@ if (isset($scriptList) && is_array($scriptList)) {
                 } else {
                     echo "<li> <a href='../layout/index.php'>Rentals</a>";
                 }
-                if ($currentPage === 'custBooking.php') {
-                    echo "<li> <a style='background-color: #ffd6ba'>My Bookings</a>";
-                } else {
-                    echo "<li> <a href='../layout/custBooking.php'>My Bookings</a>";
-                }
                 if ($currentPage === 'map.php') {
                     echo "<li> <a style='background-color: #ffd6ba'>More Info</a>";
                 } else {
