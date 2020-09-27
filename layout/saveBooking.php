@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+// Should not be accessible outside of this form submission
+if (!isset($_POST['proceed'])) {
+    $lastPage = $_SESSION['lastPage'];
+    header("Location: $lastPage");
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -52,9 +59,6 @@ if (isset($_POST['proceed'])) {
     echo "<p>Drop Off: $dropoff[2]-$dropoff[1]-$dropoff[0]</p>";
     echo "</div>";
 
-} else {
-    header("Location: index.php");
-    exit;
 }
 ?>
 

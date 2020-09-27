@@ -3,7 +3,7 @@
         "vehicle": [
             {
                 "registration": "ABC 123",
-                "vehicleType": "Small",
+                "vehicleType": "Smallish",
                 "description": "Great small car, superb economy.",
                 "pricePerDay": "40.0"
             },
@@ -29,7 +29,7 @@
                 "registration": "HXB 852",
                 "vehicleType": "Large",
                 "description": "Full-sized station wagon.",
-                "pricePerDay": "80.5"
+                "pricePerDay": "85"
             },
             {
                 "registration": "HSK 325",

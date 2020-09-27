@@ -20,13 +20,15 @@ if (isset($scriptList) && is_array($scriptList)) {
                 <?php
                 $currentPage = basename($_SERVER['PHP_SELF']);
                 if ($currentPage == 'admin.php' || $currentPage == 'addVehicle.php' ||
-                $currentPage == 'existingVehicles.php') {
+                $currentPage == 'existingVehicles.php' ||
+                $currentPage == 'processVehicle.php') {
                     if ($currentPage === 'admin.php') {
                         echo "<li> <a style='background-color: #ffd6ba'>Bookings</a>";
                     } else {
                         echo "<li> <a href='../layout/admin.php'>Bookings</a>";
                     }
-                    if ($currentPage === 'existingVehicles.php') {
+                    if ($currentPage === 'existingVehicles.php' ||
+                    $currentPage == 'processVehicle.php') {
                         echo "<li> <a style='background-color: #ffd6ba'>Fleet</a>";
                     } else {
                         echo "<li> <a href='../layout/existingVehicles.php'>Fleet</a>";

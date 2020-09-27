@@ -274,7 +274,27 @@ img{
     background-color: lightgray;
 }
 
-.cancelButton:hover, .deleteButton:hover, .editButton:hover {
+.editVButton {
+    border-radius: 10px;
+    border: none;
+    padding: 5pt;
+    cursor: pointer;
+    font-size: 12pt;
+    width: 40%;
+    background-color: lightgray;
+}
+
+.backButton {
+    border-radius: 10px;
+    border: none;
+    padding: 7pt;
+    cursor: pointer;
+    font-size: 12pt;
+    width: 40%;
+    background-color: #f2f2f2;
+}
+
+.cancelButton:hover, .deleteButton:hover, .editButton:hover. .backButton:hover, .editVButton:hover {
     text-shadow: 0 0 6px rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0 5px 40px -10px rgba(0,0,0,0.57);
@@ -285,3 +305,9 @@ img{
     color: #89B0AE;
 }
 
+.editForm input, textarea{
+    padding: 5pt;
+    width: 30%;
+    margin-top: 5pt;
+    font-family: lato-light;
+}
