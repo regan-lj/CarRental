@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("../hidden/splitJson.php");
 
 // Should not be accessible outside of these forms
 if (!isset($_POST['back']) && !isset($_POST['deleteVehicle']) &&
@@ -39,16 +40,12 @@ include('../hidden/header.php');
 
     // DELETE VEHICLE
     if (isset($_POST['deleteVehicle'])) {
+
         $output_filename = "../json/vehicles.json";
-        // Identify index of booking and update the json
+        // Identify index of vehicle and update the json
         $index = $_POST['allVehicles'];
-        // Get all vehicles before deleted vehicle
-        $updated_vehicles = array_slice($json["fleet"]["vehicle"], 0, $index);
-        // Add the bookings after cancelled booking
-        $after = array_slice($json["fleet"]["vehicle"], $index+1);
-        foreach ($after as $vehicle) {
-            array_push($updated_vehicles, $vehicle);
-        }
+        $rego = $json["fleet"]['vehicle'][$index]["registration"]; // store registration
+        $updated_vehicles = splitJson($json["fleet"]["vehicle"], $index);
 
         // Make the new json structure
         $new_vehicle = array("vehicle" => $updated_vehicles);
@@ -57,6 +54,34 @@ include('../hidden/header.php');
         // Put back the new json
         $newJsonString = json_encode($new_vehicles, JSON_PRETTY_PRINT)."\n";
         file_put_contents($output_filename, $newJsonString);
+
+        // NEED TO DELETE ALL ASSOCIATED BOOKINGS
+        $input_filename2 = "../json/bookings.json";
+        $output_filename2 = "../json/bookings.json";
+        $json_input2 = file_get_contents($input_filename2);
+        $json2 = json_decode($json_input2, true);
+        $count = 0;
+        $nodes_to_delete = array();
+
+        foreach ($json2["bookings"]["booking"] as $booking) {
+            if ($booking["number"] == $rego) {
+                array_push($nodes_to_delete, $count);
+            }
+            $count += 1;
+        }
+
+        rsort($nodes_to_delete); // Sort in descending order so indices won't need to be updated
+        foreach ($nodes_to_delete as $node) {
+            $json2["bookings"]["booking"] = splitJson($json2["bookings"]["booking"], $node);
+        }
+
+        // Make the new json structure
+        $new_booking = array("booking" => $json2["bookings"]["booking"]);
+        $new_bookings = array("bookings" => $new_booking);
+
+        // Put back the new json
+        $newJsonString = json_encode($new_bookings, JSON_PRETTY_PRINT)."\n";
+        file_put_contents($output_filename2, $newJsonString);
 
         echo "<p>Vehicle successfully deleted.</p>";
     }

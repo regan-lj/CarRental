@@ -29,7 +29,7 @@
                 "registration": "HXB 852",
                 "vehicleType": "Large",
                 "description": "Full-sized station wagon.",
-                "pricePerDay": "85"
+                "pricePerDay": "80.5"
             },
             {
                 "registration": "HSK 325",
@@ -37,7 +37,6 @@
                 "description": "A basic family car, seats 5.",
                 "pricePerDay": "65"
             },
-
             {
                 "registration": "MJN 842",
                 "vehicleType": "Medium",
@@ -57,30 +56,11 @@
                 "pricePerDay": "85"
             },
             {
-                "registration": "BJB 507",
-                "vehicleType": "Large",
-                "description": "A 4WD Ski wagon, roof-rack included.",
-                "pricePerDay": "85"
-            },
-            {
-                "registration": "BWL 561",
-                "vehicleType": "Large",
-                "description": "Performance family sedan.",
-                "pricePerDay": "90"
-            },
-            {
                 "registration": "FJH 835",
                 "vehicleType": "Luxury",
                 "description": "High performance luxury vehicle.",
                 "pricePerDay": "125"
-            },
-            {
-                "registration": "HDE 774",
-                "vehicleType": "Luxury",
-                "description": "Top of the range luxury sedan.",
-                "pricePerDay": "125"
             }
-
         ]
     }
 }

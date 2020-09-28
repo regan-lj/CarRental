@@ -1,3 +1,7 @@
+<?php
+include("../hidden/splitJson.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,13 +25,7 @@ if (isset($_POST['cancel'])) {
 
     // Identify index of booking and update the json
     $index = $_POST['index'];
-    // Get all bookings before cancelled booking
-    $updated_bookings = array_slice($json["bookings"]["booking"], 0, $index);
-    // Add the bookings after cancelled booking
-    $after = array_slice($json["bookings"]["booking"], $index+1);
-    foreach ($after as $booking) {
-        array_push($updated_bookings, $booking);
-    }
+    $updated_bookings = splitJson($json["bookings"]["booking"], $index);
 
     // Make the new json structure
     $new_booking = array("booking" => $updated_bookings);

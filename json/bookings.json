@@ -2,16 +2,58 @@
     "bookings": {
         "booking": [
             {
-                "number": "BJB 499",
+                "number": "ABC 123",
                 "name": "Person 1",
                 "pickup": {
-                    "day": "29",
+                    "day": "30",
                     "month": "09",
                     "year": "2020"
                 },
                 "dropoff": {
-                    "day": "01",
+                    "day": "03",
                     "month": "10",
+                    "year": "2020"
+                }
+            },
+            {
+                "number": "HXB 852",
+                "name": "Person 2",
+                "pickup": {
+                    "day": "15",
+                    "month": "10",
+                    "year": "2020"
+                },
+                "dropoff": {
+                    "day": "30",
+                    "month": "10",
+                    "year": "2020"
+                }
+            },
+            {
+                "number": "BJB 507",
+                "name": "Person 3",
+                "pickup": {
+                    "day": "14",
+                    "month": "10",
+                    "year": "2020"
+                },
+                "dropoff": {
+                    "day": "16",
+                    "month": "10",
+                    "year": "2020"
+                }
+            },
+            {
+                "number": "ABC 123",
+                "name": "Person 4",
+                "pickup": {
+                    "day": "18",
+                    "month": "11",
+                    "year": "2020"
+                },
+                "dropoff": {
+                    "day": "11",
+                    "month": "12",
                     "year": "2020"
                 }
             }
