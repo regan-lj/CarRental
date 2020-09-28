@@ -38,12 +38,14 @@ let DisplayCars = (function() {
                 regoImage = regoImage.concat(".jpg");
 
                 // Display the description and image
-                // TODO: Fix the problem with name being depreciated
                 section.append(
                     "<p class='toToggle' name='" + rego + "'>" +
                     car.description + "</p>" + "<br class='toToggle' name='" +
-                    rego + "'><img class='toToggle' name='" + rego +
+                    rego + "'>");
+
+                section.append("<img class='toToggle' name='" + rego +
                     "' src='../images/" + regoImage + "'><br>");
+
 
                 // Display the button to make a booking
                 section.append(
